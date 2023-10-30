@@ -70,3 +70,63 @@ const theExample = (
     <h1>Click me!</h1>
   </a>
 );
+
+//6. JSX OUTER ELEMENTS
+
+/* There’s a rule that we haven’t mentioned: 
+a JSX expression must have exactly one outermost element.
+
+In other words, this code will work: */
+
+const paragraph = (
+  <div id="i-am-the-outermost-element">
+    <p>I am a paragraph.</p>
+    <p>I, too, am a paragraph.</p>
+  </div>
+);
+
+// But this code will not work:
+
+//const paragraphs = (
+// <p>I am a paragraph.</p>
+// <p>I, too, am a paragraph.</p>
+//);
+
+//7. RENDERING JSX:
+
+//To render a JSX expression means to make it appear on screen.
+
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<h1>Hello world</h1>);
+
+//the code above will render JSX.
+
+//8. RENDERING JSX EXPLAINED:
+
+/*Before we get started it is essential to understand that 
+React relies on two things to render: 
+what content to render and 
+where to place the content.*/
+
+//const container = document.getElementById("app");
+
+/*Uses the document object which represents our web page.
+Uses the getElementById() method of document to get 
+the Element object representing the HTML element with the passed in id (app).
+Stores the element in container.*/
+
+//const root = createRoot(container);
+
+/*we use createRoot() from the react-dom/client library,
+which creates a React root from container 
+and stores it in root. 
+root can be used to render a JSX expression.
+This is the “where to place the content” part of React rendering.*/
+
+root.render(<h1>Hello world</h1>);
+
+/*uses the render() method of root to render the content 
+passed in as an argument. Here we pass an <h1> element, 
+which displays Hello world. 
+This is the “what content to render” part of React rendering.*/
