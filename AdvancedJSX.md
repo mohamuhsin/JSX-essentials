@@ -94,3 +94,61 @@ In this example, the variable `name` is declared outside the JSX code block but 
 
 Using variables in JSX enables you to create dynamic and data-driven content within your JSX elements.
 
+
+## 5. Using Variables and Object Properties for Attributes in JSX
+
+In JSX, it's common to use variables and object properties to set attributes for elements. This approach allows for dynamic and reusable code. Here are examples of how you can use variables and object properties for attributes in JSX:
+
+### Using Variables for Attributes:
+
+You can use variables to set attributes, which can make your code more readable, especially when you have many attributes for one element. Here's an example:
+
+```jsx
+const sideLength = "200px";
+
+const panda = (
+  <img 
+    src="images/panda.jpg" 
+    alt="panda" 
+    height={sideLength} 
+    width={sideLength} />
+);
+```
+
+In this example, the `sideLength` variable is used to set the `height` and `width` attributes of the `<img>` element.
+
+## Using Object Properties for Attributes:
+
+You can also use object properties to set attributes, which is useful when you have multiple elements with similar attributes. Here's an example using an object `pics`:
+
+```jsx
+const pics = {
+  panda: "http://bit.ly/1Tqltv5",
+  owl: "http://bit.ly/1XGtkM3",
+  owlCat: "http://bit.ly/1Upbczi"
+}; 
+
+const panda = (
+  <img 
+    src={pics.panda} 
+    alt="Lazy Panda" />
+);
+
+const owl = (
+  <img 
+    src={pics.owl} 
+    alt="Unimpressed Owl" />
+);
+
+const owlCat = (
+  <img 
+    src={pics.owlCat} 
+    alt="Ghastly Abomination" />
+);
+```
+
+In this example, an object `pics` is used to store image sources, and these properties are used to set the `src` attribute for each `<img>` element. This approach makes it easy to manage and update attributes for multiple elements.
+
+Using variables and object properties for attributes in JSX allows you to create more flexible and maintainable code.
+
+
