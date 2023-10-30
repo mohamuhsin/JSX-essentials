@@ -74,4 +74,23 @@ root.render(<h1>{2 + 3}</h1>);
 By wrapping `2 + 3` in curly braces, it's treated as a JavaScript expression and correctly evaluates to `5` within the `<h1>` element.
 
 This allows you to seamlessly integrate JavaScript logic into your JSX code and achieve the desired behavior.
+
+
+## 4. Using Variables in JSX
+
+In JSX, JavaScript code is part of the same environment as the rest of your JavaScript file. This means you can access variables declared outside the JSX code block from within JSX expressions. 
+
+Here's an example of how to declare a variable and access it within a JSX expression:
+
+```jsx
+// Declare a variable:
+const name = 'Gerdo';
+
+// Access your variable inside of a JSX expression:
+const greeting = <p>Hello, {name}!</p>;
 ```
+
+In this example, the variable `name` is declared outside the JSX code block but can be accessed and used inside the JSX expression by wrapping it in curly braces `{}`. This allows you to dynamically insert the value of `name` into the JSX element, resulting in the message "Hello, Gerdo!".
+
+Using variables in JSX enables you to create dynamic and data-driven content within your JSX elements.
+
