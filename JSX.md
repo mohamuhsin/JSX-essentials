@@ -77,10 +77,10 @@ const paragraph = (
 But this code will not work:
 
 ```jsx
-// const paragraphs = (
-//  <p>I am a paragraph.</p>
-//  <p>I, too, am a paragraph.</p>
-// );
+ const paragraphs = (
+  <p>I am a paragraph.</p>
+  <p>I, too, am a paragraph.</p>
+ );
 ```
 
 # 7. Rendering JSX
