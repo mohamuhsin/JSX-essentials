@@ -130,3 +130,21 @@ root.render(<h1>Hello world</h1>);
 passed in as an argument. Here we pass an <h1> element, 
 which displays Hello world. 
 This is the “what content to render” part of React rendering.*/
+
+//8. PASSING A VARIABLE TO render():
+
+/* The render() method’s argument doesn’t need to be JSX,
+but it should evaluate to a JSX expression. 
+The argument could also be a variable, 
+so long as that variable evaluates to a JSX expression.*/
+
+const toDoList = (
+  <ol>
+    <li>Learn React</li>
+    <li>Become a Developer</li>
+  </ol>
+);
+
+//const container = document.getElementById("app");
+//const root = createRoot(container);
+root.render(toDoList);
