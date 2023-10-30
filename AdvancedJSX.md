@@ -117,7 +117,7 @@ const panda = (
 
 In this example, the `sideLength` variable is used to set the `height` and `width` attributes of the `<img>` element.
 
-## Using Object Properties for Attributes:
+### Using Object Properties for Attributes:
 
 You can also use object properties to set attributes, which is useful when you have multiple elements with similar attributes. Here's an example using an object `pics`:
 
