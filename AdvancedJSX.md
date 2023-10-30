@@ -152,3 +152,28 @@ In this example, an object `pics` is used to store image sources, and these prop
 Using variables and object properties for attributes in JSX allows you to create more flexible and maintainable code.
 
 
+## 6. Event Listeners in JSX
+
+In JSX, you can add event listeners to elements, similar to HTML. Event listeners are a fundamental part of programming in React, allowing you to respond to user interactions. To create an event listener, you assign a special attribute to a JSX element. Here's an example:
+
+```jsx
+<img onClick={clickAlert} />
+```
+
+In this example, the `onClick` attribute is used to add a click event listener to the `<img>` element. The attribute's value should be a function, like `clickAlert`, which will be executed when the click event occurs.
+
+For this to work, `clickAlert` must be a valid function defined elsewhere in your code:
+
+```jsx
+function clickAlert() {
+  alert('You clicked this image!');
+}
+
+<img onClick={clickAlert} />
+```
+
+It's important to note that in HTML, event listener names are typically written in all lowercase (e.g., `onclick` or `onmouseover`). However, in JSX, event listener names are written in camelCase (e.g., `onClick` or `onMouseOver`).
+
+You can find a list of supported event names in the React documentation's common components list. Event listeners are essential for creating interactive and responsive user interfaces in React.
+```
+
