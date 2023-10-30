@@ -1,4 +1,3 @@
-````markdown
 # 1. What is JSX?
 
 JSX is a syntax extension for JavaScript. It was written to be used with React. JSX code looks a lot like HTML.
@@ -12,7 +11,6 @@ If a JavaScript file contains JSX code, then that file will have to be compiled.
 ```jsx
 <h1>Hello World</h1>
 ```
-````
 
 This JSX element looks exactly like HTML! The only noticeable difference is that you would find it in a JavaScript file, instead of in an HTML file.
 
