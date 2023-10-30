@@ -1,4 +1,5 @@
-//What is JSX?
+//1. WHAT IS JSX?:
+
 //JSX is a syntax extension for JavaScript.
 //It was written to be used with React.
 //JSX code looks a lot like HTML.
@@ -12,7 +13,8 @@ This means that before the file reaches a web browser,
 a JSX compiler will translate any JSX into regular JavaScript.
 */
 
-//JSX Elements
+//2. JSX ELEMENTS:
+
 <h1>Hello World</h1>;
 
 /*This JSX element looks exactly like HTML! 
@@ -20,7 +22,7 @@ The only noticeable difference
 is that you would find it in a JavaScript file, 
 instead of in an HTML file.*/
 
-//JSX Elements And Their Surroundings
+//3. JSX ELEMENTS AND THEIR SURROUNDINGS
 
 /*
 JSX elements are treated as JavaScript expressions. 
@@ -41,4 +43,30 @@ const myTeam = {
 
 //being saved as an object.
 
-// Attributes in JSX
+//4. ATTRIBUTES IN JSX
+
+/*JSX elements can have attributes, just like how HTML elements can.
+A JSX attribute is written using HTML-like syntax: a name, 
+followed by an equals sign, followed by a value. 
+The value should be wrapped in quotes, as shown below*/
+
+const p1 = <p id="large">foo</p>;
+const p2 = <p id="small">bar</p>;
+
+//5. NESTED JSX
+
+/*
+You can nest JSX elements inside of other JSX elements, just like in HTML.
+
+Here’s an example of a JSX <h1> element, 
+nested inside of a JSX <a> element: */
+
+<a href="https://www.example.com">
+  <h1>Click me!</h1>
+</a>;
+
+const theExample = (
+  <a href="https://www.example.com">
+    <h1>Click me!</h1>
+  </a>
+);
