@@ -150,6 +150,3 @@ root.render(hello, document.getElementById("app"));
 root.render(hello, document.getElementById("app"));
 ```
 
-```
-
-```
