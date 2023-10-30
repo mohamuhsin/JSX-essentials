@@ -54,5 +54,24 @@ const profile = (
 );
 ```
 
-These tips and common errors should help you work with JSX more effectively.
+## 3. Using Curly Braces in JSX
+
+In JSX, code placed between tags is treated as JSX itself, not as regular JavaScript. This can lead to unexpected behavior, as seen when trying to add 2 and 3 between `<h1>` tags, which resulted in "2 + 3" as a string of text. To treat code as regular JavaScript, you can wrap it in curly braces `{}`.
+
+Here's an example of using curly braces to evaluate `2 + 3` as JavaScript within a JSX element:
+
+```jsx
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById('app');
+const root = createRoot(container);
+
+// Wrapping the expression in curly braces to evaluate it as JavaScript
+root.render(<h1>{2 + 3}</h1>);
+```
+
+By wrapping `2 + 3` in curly braces, it's treated as a JavaScript expression and correctly evaluates to `5` within the `<h1>` element.
+
+This allows you to seamlessly integrate JavaScript logic into your JSX code and achieve the desired behavior.
 ```
