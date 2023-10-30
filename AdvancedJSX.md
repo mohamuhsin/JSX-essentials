@@ -316,3 +316,27 @@ const liArray = [
 ```
 
 These examples demonstrate how to use `.map()` to efficiently generate lists of JSX elements or define them directly in JSX to suit your specific needs when creating React components.
+
+
+
+## 12. Understanding Keys in JSX Lists
+
+When creating lists in JSX, you may need to include a concept called "keys." A key is a JSX attribute with the name "key," and its value should be something unique, similar to an "id" attribute in HTML. Keys are not visible to users but are used by React internally to manage and maintain lists properly. Without keys, React might reorganize or misorder list items, leading to unintended behavior.
+
+Not all lists require keys. Lists should have keys in the following situations:
+
+1. **List Items with Memory**: When the list items need to retain their state or data from one render to the next. For example, in a to-do list, each item must remember whether it was checked off. Keys help ensure that items maintain their state correctly during re-renders.
+
+2. **List Order May Change**: When the order of list items might change between renders. For instance, a list of search results could be shuffled from one render to the next. Keys assist React in correctly identifying and updating items even when their order changes.
+
+If your list doesn't meet these criteria, you may not need to worry about using keys. However, as a good practice, it's advisable to include keys for lists whenever possible. This helps ensure the stability and predictability of your React components, even in cases where you are unsure about the necessity of keys.
+
+Example Below:
+
+```
+<ul>
+  <li key="li-01">Example1</li>
+  <li key="li-02">Example2</li>
+  <li key="li-03">Example3</li>
+</ul>
+```
