@@ -202,5 +202,38 @@ So, how can you conditionally render JSX expressions based on certain circumstan
 3. **Conditional Rendering with Functions**: You can define functions in your JSX and use them to conditionally render content based on conditions.
 
 These techniques will allow you to render JSX expressions under specific circumstances, providing you with the flexibility to create dynamic and responsive UIs in React.
+
+
+## 8. JSX Conditionals with If Statements
+
+While you can't directly inject an `if` statement into a JSX expression, you can still use `if` statements effectively by placing them outside the JSX code block. Here's an example of how to write conditional statements in JSX:
+
+```jsx
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById('app');
+const root = createRoot(container);
+
+let message;
+
+if (user.age >= drinkingAge) {
+  message = (
+    <h1>
+      Hey, check out this alcoholic beverage!
+    </h1>
+  );
+} else {
+  message = (
+    <h1>
+      Hey, check out these earrings I got at Claire's!
+    </h1>
+  );
+}
+
+root.render(message);
 ```
 
+In this example, an `if` statement is used to conditionally set the `message` variable based on the user's age compared to the `drinkingAge`. If the condition is true, it renders one JSX element; otherwise, it renders another.
+
+By keeping the `if` statement outside of the JSX code block, you can effectively create conditional rendering in JSX. This approach allows you to determine what to display based on conditions, providing flexibility and control in your React applications.
