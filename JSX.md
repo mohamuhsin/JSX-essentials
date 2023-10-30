@@ -100,13 +100,13 @@ The code above will render JSX.
 Before we get started it is essential to understand that React relies on two things to render: what content to render and where to place the content.
 
 ```jsx
-// const container = document.getElementById("app");
+ const container = document.getElementById("app");
 ```
 
 Uses the document object which represents our web page. Uses the `getElementById()` method of document to get the Element object representing the HTML element with the passed-in id (app). Stores the element in container.
 
 ```jsx
-// const root = createRoot(container);
+ const root = createRoot(container);
 ```
 
 We use `createRoot()` from the `react-dom/client` library, which creates a React root from `container` and stores it in `root`. `root` can be used to render a JSX expression. This is the “where to place the content” part of React rendering.
@@ -129,8 +129,8 @@ const toDoList = (
   </ol>
 );
 
-// const container = document.getElementById("app");
-// const root = createRoot(container);
+ const container = document.getElementById("app");
+ const root = createRoot(container);
 root.render(toDoList);
 ```
 
