@@ -27,10 +27,10 @@ const myTeam = {
   smallForward: <li>Tayshaun Dasmoto</li>,
   shootingGuard: <li>Colmar Cumberbatch</li>,
   pointGuard: <li>Femi Billon</li>,
-};
+}; // Being saved as an object.
 ```
 
-Being saved as an object.
+
 
 # 4. Attributes in JSX
 
