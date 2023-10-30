@@ -175,5 +175,32 @@ function clickAlert() {
 It's important to note that in HTML, event listener names are typically written in all lowercase (e.g., `onclick` or `onmouseover`). However, in JSX, event listener names are written in camelCase (e.g., `onClick` or `onMouseOver`).
 
 You can find a list of supported event names in the React documentation's common components list. Event listeners are essential for creating interactive and responsive user interfaces in React.
+
+
+## 7. JSX Conditionals and If Statements
+
+In JSX, you cannot directly inject an `if` statement into a JSX expression. The following code, for example, will not work:
+
+```jsx
+(
+  <h1>
+    {
+      if (purchase.complete) {
+        'Thank you for placing an order!'
+      }
+    }
+  </h1>
+)
+```
+
+So, how can you conditionally render JSX expressions based on certain circumstances? There are several options to achieve this, and we'll explore them in the upcoming lessons. Here are some simple ways to write conditionals in JSX:
+
+1. **Using the Ternary Operator**: You can use the ternary operator (`condition ? trueExpression : falseExpression`) to conditionally render JSX based on a condition.
+
+2. **Using the Logical && Operator**: You can utilize the `&&` operator to conditionally render JSX by evaluating a condition and rendering the JSX if the condition is `true`.
+
+3. **Conditional Rendering with Functions**: You can define functions in your JSX and use them to conditionally render content based on conditions.
+
+These techniques will allow you to render JSX expressions under specific circumstances, providing you with the flexibility to create dynamic and responsive UIs in React.
 ```
 
