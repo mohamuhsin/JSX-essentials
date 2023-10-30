@@ -237,3 +237,20 @@ root.render(message);
 In this example, an `if` statement is used to conditionally set the `message` variable based on the user's age compared to the `drinkingAge`. If the condition is true, it renders one JSX element; otherwise, it renders another.
 
 By keeping the `if` statement outside of the JSX code block, you can effectively create conditional rendering in JSX. This approach allows you to determine what to display based on conditions, providing flexibility and control in your React applications.
+
+
+
+## 9. Using the Ternary Operator for Conditionals in JSX
+
+The ternary operator is a concise way to write conditionals in JSX, and it works in React just as it does in regular JavaScript. It is often used to conditionally render content based on a condition. Here's an example of using the ternary operator in a JSX expression:
+
+```jsx
+const headline = (
+  <h1>
+    {age >= drinkingAge ? 'Buy Drink' : 'Do Teen Stuff'}
+  </h1>
+```
+
+In this example, if the condition `age >= drinkingAge` is true, the `headline` will be set to `<h1>Buy Drink</h1>`. If the condition is false, it will be set to `<h1>Do Teen Stuff</h1>`.
+
+The ternary operator is a compact and efficient way to handle simple conditionals in JSX, providing a clean and readable way to express different outcomes based on the evaluation of a condition.
