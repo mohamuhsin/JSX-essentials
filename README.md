@@ -5,4 +5,4 @@ In this we discussed the following:
 - Advanced JSX
 - Code
 
-# How To Build This App:
+# How To Build This App
