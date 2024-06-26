@@ -1,6 +1,6 @@
 # JSX-Essentials
 
-In this we discussed the following
+In this we discussed the following:
 - JSX
 - Advanced JSX
 - Code
