@@ -1,4 +1,4 @@
-# JSX-Essentials
+# JSX-Essentials:
 
 In this we discussed the following:
 - JSX
